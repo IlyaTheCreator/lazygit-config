@@ -21,3 +21,9 @@ keymap.set("n", "-", "<C-x>")
 
 -- Select all
 keymap.set("n", "<C-a>", "gg<S-v>G")
+
+-- Blame line
+keymap.set("n", "gb", "<Cmd>Gitsigns blame_line<CR>", opts)
+
+-- Pretty ts error in separate window
+keymap.set("n", "te", "<Cmd>DiagWindowShow<CR>", opts)
